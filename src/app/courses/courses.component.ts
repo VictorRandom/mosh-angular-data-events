@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CoursesComponent implements OnInit {
 
   title = "List of Courses";
-  imageUrl = "https://picsum.photos/400/200"
+  imageUrl = "https://picsum.photos/400/200";
+  colSpan = 2;
 
   constructor() { }
 
