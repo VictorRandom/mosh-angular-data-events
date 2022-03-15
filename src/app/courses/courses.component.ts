@@ -33,4 +33,8 @@ export class CoursesComponent implements OnInit {
     }
   }
 
+  onKeyUp2(email: string){
+    console.log(email);
+  }
+
 }
