@@ -17,4 +17,14 @@ export class CoursesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSave($event: any){
+    //evento para previnir o bubble event (que continue seguindo para os elementos sobrepostos)
+    $event.stopPropagation();
+    console.log('button was clicked', $event);
+  }
+
+  onDivClicked(){
+    console.log("div was clicked");
+  }
+
 }

@@ -12,9 +12,13 @@
   </tr>
 </table>
 
-<button
-  class="btn btn-primary"
-  [class.active]="isActive"
-  [style.backgroundColor]="isActive ? 'blue' : 'white'"
->
-  Save</button>
+<div (click)="onDivClicked()">
+  <button
+    class="btn btn-primary"
+    [class.active]="isActive"
+    [style.backgroundColor]="isActive ? 'blue' : 'white'"
+    (click)="onSave($event)"
+  >
+    Save
+  </button>
+</div>
