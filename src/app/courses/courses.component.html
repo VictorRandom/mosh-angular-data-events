@@ -29,3 +29,12 @@
 <input #email (keyup.enter)="onKeyUp2(email.value)" />
 
 <input [(ngModel)]="email2" (keyup.enter)="onKeyUp3()" />
+
+
+<div>
+  {{ course.title | uppercase | lowercase }} <br/>
+  {{ course.students | number }} <br/>
+  {{ course.rating | number:'1.2-2' }} <br/>
+  {{ course.price | currency:'BRL':false }} <br/>
+  {{ course.releaseDate | date:'shortDate' }} <br/>
+</div>
