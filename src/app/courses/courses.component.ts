@@ -11,6 +11,8 @@ export class CoursesComponent implements OnInit {
   imageUrl = "https://picsum.photos/400/200";
   colSpan = 2;
   isActive:boolean = true;
+  email:string | undefined;
+  email2: string | undefined;
 
   constructor() { }
 
@@ -35,6 +37,10 @@ export class CoursesComponent implements OnInit {
 
   onKeyUp2(email: string){
     console.log(email);
+  }
+
+  onKeyUp3(){
+    console.log(this.email2);
   }
 
 }

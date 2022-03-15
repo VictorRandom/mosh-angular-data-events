@@ -27,3 +27,5 @@
 <input (keyup.enter)="onKeyUp($event)" />
 
 <input #email (keyup.enter)="onKeyUp2(email.value)" />
+
+<input [(ngModel)]="email2" (keyup.enter)="onKeyUp3()" />
