@@ -27,4 +27,10 @@ export class CoursesComponent implements OnInit {
     console.log("div was clicked");
   }
 
+  onKeyUp($event: any){
+    if($event){
+      console.log("ENTER was pressed")
+    }
+  }
+
 }
